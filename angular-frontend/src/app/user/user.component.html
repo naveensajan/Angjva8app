@@ -1,0 +1,23 @@
+<div class ="container bg-secondary">
+    <div class = "card border-info bg-light" style="max-width: 50rem;">
+        <h3 class="text-center"> Users List</h3>
+        <div class = "card-body">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <th>Id</th>
+                    <th> First Name</th>
+                    <th> Last Name</th>
+                    <th> Email </th>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let user of users" class="table-secondary">
+                        <td> {{ user.id}}</td>
+                        <td> {{ user.firstName}}</td>
+                        <td> {{ user.lastName}}</td>
+                        <td> {{ user.email}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
